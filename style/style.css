@@ -286,3 +286,31 @@ a {
     color: var(--text);
     font-size: var(--font-sm);
 }
+
+.how-section{
+    padding-block: var(--spacing-lg);
+    padding-inline: var(--spacing-lg);
+}
+.steps-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+}
+.step-card{
+    padding: var(--spacing-sm);
+    border-left: 2px solid var(--primary-dark);
+}
+.step-card > span{
+    color: var(--primary-dark);
+    font-size: var(--font-sm);
+    font-weight: 700;
+}
+
+.step-card h3{
+    margin-block: var(--spacing-sm);
+}
+
+.step-card p{
+    color: var(--text);
+    font-size: var(--font-sm);
+}
