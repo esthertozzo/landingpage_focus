@@ -314,3 +314,53 @@ a {
     color: var(--text);
     font-size: var(--font-sm);
 }
+
+.audience-section{
+    background: var(--white);
+    max-width: 100%;
+    width: 100%;
+    padding-inline: var(--spacing-lg);
+}
+.audience-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-sm);
+}
+.audience-card{
+    padding: var(--spacing-md);
+    background: var(--background);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+}
+.audience-card.highlight{
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.audience-card > span{
+    color: var(--primary-dark);
+    font-weight: 700;
+}
+.audience-card small{
+    display: block;
+    margin-top: var(--spacing-sm);
+    color: var(--muted);
+    font-size: var(--spacing-sm);
+    text-transform: uppercase;
+}
+.audience-card.highlight small{
+    color: #aaaabd;
+}
+.audience-card h3{
+    margin-block: var(--spacing-sm);
+    font-size: var(--font-md);
+}
+
+.audience-card p{
+    color: var(--text);
+    font-size: var(--font-sm);
+}
+
+.audience-card.highlight p{
+    color: #bbbccd;
+}
