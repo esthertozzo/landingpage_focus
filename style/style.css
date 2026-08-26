@@ -398,9 +398,7 @@ a {
 .gallery-item img{
    width: 100%;
     height: 50vh;
-
     display: block;
-
     object-fit: contain;
   background: #f6f6fb;
   transition: transform 0.4s ease;
@@ -415,4 +413,60 @@ a {
   font-size: var(--font-sm);
   font-weight: 700;
   border-top: 1px solid var(--border);
+}
+
+.team-section{
+  border-top: 1px solid var(--border);
+  padding-block: var(--spacing-lg);
+  padding-inline: var(--spacing-lg);
+}
+.team-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.team-card{
+  padding: var(--spacing-lg);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+.avatar{
+  width: 8vh;
+  height: 8vh;
+  display: grid;
+  place-items: center;
+
+  margin: 0 auto var(--spacing-sm);
+  border-radius: 50%;
+  background: var(--gradient);
+  color: var(--white);
+  font-weight: 800;
+}
+.team-card h3{
+  font-size: var(--font-sm);
+}
+.team-card p{
+  color: var(--muted);
+  font-size: var(--font-sm);
+  margin-top: var(--spacing-sm);
+}
+
+@media (max-width:1024px){
+  .gallery-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 767px){
+    .gallery-grid{
+      grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+    }
+    .gallery-item figcaption{
+      padding: var(--spacing-md);
+      font-size: var(--font-sm);
+    }
 }
