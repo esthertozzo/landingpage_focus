@@ -260,13 +260,11 @@ a {
   border-radius: var(--radius-md);
   background: #fafaff;
 }
-.solution-card:nth-child(4),
-.solution-card:nth-child(5) {
-  grid-column: span 3;
-}
+
 .soluction-card.featured {
   background: var(--gradient);
   color: white;
+  grid-column: span 3;
 }
 .soluction-card.featured p {
   color: var(--white);
@@ -566,6 +564,52 @@ a {
 
 
 @media (max-width:1024px){
+  .navbar {
+        min-height: 70px;
+        padding: 0 var(--spacing-md);
+    }
+
+    .logo {
+        padding-inline: var(--spacing-sm);
+    }
+
+    .nav-links {
+        gap: var(--spacing-sm);
+    }
+
+    .nav-links a {
+        font-size: var(--font-sm);
+    }
+
+  .hero{
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding-block: var(--spacing-xl);
+  }
+  .hero-content{
+    max-width: 700px;
+  }
+  .problem-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .steps-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .audience-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-grid{
+    grid-template-rows: 1fr;
+  }
+  .footer-content{
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-nav{
+    justify-content: flex-end;
+  }
   .gallery-grid{
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
@@ -573,6 +617,68 @@ a {
 }
 
 @media (max-width: 767px){
+   .navbar {
+        min-height: auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .logo {
+        padding-inline: 0;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
+    }
+
+    .nav-links a {
+        font-size: var(--font-sm);
+    }
+    .hero{
+      padding-block: var(--spacing-xl);
+      gap: var(--spacing-lg);
+    }
+    .hero h1{
+      font-size: var(--font-md);
+    }
+    .hero p{
+      font-size: var(--font-sm);
+    }
+    .section{
+      padding-block: var(--spacing-xl);
+    }
+    .section-heading{
+      margin-bottom: var(--spacing-lg);
+    }
+    .section-heading h2{
+      font-size: var(--font-lg);
+    }
+    .problem-grid{
+      grid-template-columns: 1fr;
+    }
+    .numbers-grid{
+      grid-template-columns: 1fr;
+      padding: var(--spacing-sm);
+    }
+    .soluction-grid{
+      grid-template-columns: 1fr;
+    }
+    .soluction-card{
+      grid-column: span 3;
+    }
+    .steps-grid{
+      grid-template-columns: 1fr;
+    }
+    .audience-grid{
+      grid-template-columns: 1fr;
+    }
+
     .gallery-grid{
       grid-template-columns: 1fr;
       gap: var(--spacing-md);
@@ -580,5 +686,27 @@ a {
     .gallery-item figcaption{
       padding: var(--spacing-md);
       font-size: var(--font-sm);
+    }
+    .team-grid{
+      grid-template-columns: 1fr;
+    }
+    .contact-grid{
+      grid-template-columns: 1fr;
+      padding: var(--spacing-sm);
+      gap: var(--spacing-md);
+    }
+    .contact-form{
+      padding: var(--spacing-sm);
+    }
+    .footer-content{
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .footer-nav{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .footer-content small{
+      grid-column: auto;
     }
 }
